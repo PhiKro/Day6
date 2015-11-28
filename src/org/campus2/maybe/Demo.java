@@ -12,10 +12,14 @@ public class Demo {
 		Name.Maybeprint();
 		//Name.setStatus(MayBe.ZugriffVerboten);
 		Name.Maybeprint();
-		MayBe<Integer> gehalt = new MayBe<Integer> (new Integer(1000),MayBe.ZugriffVerboten);
+		MayBe<Integer> gehalt = 
+				new MayBe<Integer> 
+			(1000,MayBe.ZugriffErlaubt); // (new Integer(1000),MayBe.ZugriffErlaubt);
 		gehalt.Maybeprint();
 		
-		MayBe<GregorianCalendar> Geb= new MayBe<GregorianCalendar>(new GregorianCalendar(2015,10,10),MayBe.ZugriffErlaubt);
+		MayBe<GregorianCalendar> Geb= 
+				new MayBe<GregorianCalendar>
+			(new GregorianCalendar(2015,10,10),MayBe.ZugriffErlaubt);
 		Geb.Maybeprint();
 
 	}
